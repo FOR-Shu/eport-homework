@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  width: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #3D3D3D;
+}
+
+#root {
+  height: 100%;
 }
 
 /*
@@ -25,4 +34,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-} */
+} *//*# sourceMappingURL=index.css.map */

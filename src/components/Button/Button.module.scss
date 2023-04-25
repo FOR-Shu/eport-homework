@@ -1,0 +1,45 @@
+@import "@/styles/variables.scss";
+
+.button {
+    cursor: pointer;
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    padding: 10px 20px;
+}
+
+.btnPrimary {
+    background-color: $primary;
+    border-radius: $borderRadius;
+    color: $light;
+    border: 1px solid $primary
+}
+
+.btnPrimary:hover {
+    background-color: $light;
+    border-radius: $borderRadius;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: all .6s;
+}
+
+.btnOutline {
+    border-radius: $borderRadius;
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+.btnOutline:hover {
+    background-color: $primary;
+    border-radius: $borderRadius;
+    color: $light;
+    transition: all .6s;
+}
+
+.btnText {
+    color: $dark;
+}

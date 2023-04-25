@@ -1,5 +1,9 @@
-export default function Home() {
+import Layout from '@/components/Layout'
+
+export default function Index() {
   return (
-    <h1 class='text-3xl'>Start</h1>
+    <Layout>
+      <div>hello</div>
+    </Layout>
   )
 }
