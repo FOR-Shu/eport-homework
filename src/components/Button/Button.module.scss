@@ -16,28 +16,28 @@
     background-color: $primary;
     border-radius: $borderRadius;
     color: $light;
-    border: 1px solid $primary
-}
-
-.btnPrimary:hover {
-    background-color: $light;
-    border-radius: $borderRadius;
-    color: $primary;
     border: 1px solid $primary;
-    transition: all .6s;
+
+    &:hover {
+        background-color: $light;
+        border-radius: $borderRadius;
+        color: $primary;
+        border: 1px solid $primary;
+        transition: all .3s;
+    }
 }
 
 .btnOutline {
     border-radius: $borderRadius;
     color: $primary;
     border: 1px solid $primary;
-}
 
-.btnOutline:hover {
-    background-color: $primary;
-    border-radius: $borderRadius;
-    color: $light;
-    transition: all .6s;
+    &:hover {
+        background-color: $primary;
+        border-radius: $borderRadius;
+        color: $light;
+        transition: all .6s;
+    }
 }
 
 .btnText {
