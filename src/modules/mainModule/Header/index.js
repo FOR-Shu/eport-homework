@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import useSticky from '@/hooks/useSticky';
 
@@ -43,7 +44,7 @@ const Header = () => {
         <header className={classes.header}>
             <div className={`${classes.header__content}`}>
                 <Link href="/" className={classes.header__content__logo}>
-                    LOGO
+                    <Image src='/eport.png' alt='Eport' width='144' height='45' />
                 </Link>
                 <nav className={`${classes.header__content__nav}`}>
                     <ul>

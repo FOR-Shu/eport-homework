@@ -1,0 +1,67 @@
+@import "@/styles/variables.scss";
+
+.footer {
+    background: $primary;
+    color: $light;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-weight: 300;
+    font-size: 15px;
+
+    @include breakpoint(md) {
+        padding: 0 10rem;
+    }
+
+    &__content {
+        padding: 20px 0px;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 100;
+        // max-width: 1920px;
+        // align-items: center;
+        // justify-content: space-between;
+
+        &__menu {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            position: relative;
+            margin: 20px 0;
+
+            &__logo {
+                margin: 0px 15px;
+                width: 255px;
+                font-size: 3rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            &__link {
+                padding: 0px 15px;
+
+                ul {
+                    width: 160px;
+
+                    li {
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            &__info {
+                padding: 0px 15px;
+
+                ul {
+                    li {
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
