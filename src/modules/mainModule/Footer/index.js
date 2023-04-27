@@ -65,13 +65,11 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className={`${classes.footer__content__menu__info}`}>
+                    <div className={classes.footer__content__menu__info}>
+                            <Button type={BUTTON_TYPES.ICON} icon='facebook' />
+                            <Button type={BUTTON_TYPES.ICON} icon='instagram' />
+                            <Button type={BUTTON_TYPES.ICON} icon='youtube' />
                         <ul>
-                            <li>
-                                <Button type={BUTTON_TYPES.ICON}  />
-                                <Button type={BUTTON_TYPES.ICON}  />
-                                <Button type={BUTTON_TYPES.ICON}  />
-                            </li>
                             <li style={{ marginTop: '16px' }}>
                                 <Link href="/" legacyBehavior>
                                     <a>E-mail: eport_info@eporttw.com</a>

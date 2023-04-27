@@ -47,21 +47,38 @@
 
                     li {
                         line-height: 22px;
+
+                    }
+
+                    a {
+                        color: $light;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: $orange;
+                        }
                     }
                 }
             }
 
             &__info {
-                padding: 0px 15px;
+                padding-left: 80px;
 
                 ul {
                     li {
                         line-height: 22px;
                     }
+
+                    a {
+                        color: $light;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
                 }
             }
         }
-
-
     }
 }
