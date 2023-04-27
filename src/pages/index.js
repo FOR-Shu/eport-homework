@@ -1,11 +1,11 @@
-import Card from '@/components/Card'
 import Layout from '@/components/Layout'
+import HomePage from '@/modules/contentModule/HomePage'
 
 export default function Index() {
 
   return (
     <Layout>
-        <Card />
+      <HomePage/>
     </Layout>
   )
 }

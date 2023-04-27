@@ -1,0 +1,19 @@
+@import "@/styles/variables.scss";
+
+.container {
+    background-color: $secondary;
+    padding: 0.3rem 1.5rem;
+
+    @include breakpoint(md) {
+        padding: 2rem 10rem;
+    }
+
+    &__content {
+
+        padding-bottom: 25px;
+        &__title {
+            padding-bottom: 25px;
+
+        }
+    }
+}

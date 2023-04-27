@@ -41,7 +41,17 @@
 }
 
 .btnText {
-    color: $dark;
+    color: #3297E3;
+    text-decoration: underline;
+    font-size: 14px;
+    float: right;
+    padding: 10px 0;
+    margin: 10px;
+    transition: all .3s;
+
+    &:hover {
+        color: $primary;
+    }
 }
 
 .btnIcon {
@@ -52,9 +62,9 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: all .3s;
     display: inline-block;
     margin-right: 10px;
+    transition: all .3s;
 
     svg {
         width: 20px;

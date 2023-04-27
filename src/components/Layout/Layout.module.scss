@@ -1,16 +1,16 @@
 @import "@/styles/variables.scss";
 
 .container {
-    height: calc(100vh - 2*#{$headerHeight});
+    // height: calc(100vh - 2*#{$headerHeight});
     // height: 200vh;
     background: $bg;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1.5rem;
+    // padding: 0 1.5rem;
 
     @include breakpoint(md) {
-        padding: 0 10rem;
+        // padding: 0 10rem;
     }
 
     h1 {
@@ -23,7 +23,7 @@
         text-align: center;
         font-size: 32px;
         line-height: 45px;
-        font-weight: 700;
+        font-weight: 500;
         color: $primary;
     }
 
