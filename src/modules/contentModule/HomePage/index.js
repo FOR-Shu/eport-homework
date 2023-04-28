@@ -7,9 +7,9 @@ const HomePage = () => {
     return (
         <div>
             <Banner/>
-            <Activity title='營隊專區' />
+            <Activity title='熱門推薦' bgColor='#FFFFFF'/>
             <News title='新鮮乾貨' />
-            <Activity title='精選活動' />
+            <Activity title='精選活動' bgColor='#F3F3F3' />
             <News title='新鮮乾貨' />
         </div>
     );
