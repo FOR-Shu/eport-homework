@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className={`${classes.footer__content__menu}`}>
                     <Link href="/" className={classes.footer__content__menu__logo}>
                         {/* <img src={logo} /> */}
-                        <Image src='/logo-white.png' alt='Eport' width='191' height='61' />
+                        <Image src='/img/logo-white.png' alt='Eport' width='191' height='61' />
                     </Link>
                     <div className={`${classes.footer__content__menu__link}`}>
                         <ul>

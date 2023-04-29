@@ -25,7 +25,7 @@ const NewsCard = () => {
         <div className={`${classes.newsCards}`}>
             {newCards.map((card, i) => (
                 <div key={i} className={classes.newsCards__card}>
-                    <Image src='/cardImg.jpg' alt='img' width='45' height='45' layout="responsive" />
+                    <Image src='/img/cardImg.jpg' alt='img' width='45' height='45' layout="responsive" />
                     <div className={classes.newsCards__card__tag}>
                         <a href="#"># {card.tag}</a>
                     </div>

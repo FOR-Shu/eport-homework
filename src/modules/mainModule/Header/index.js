@@ -44,7 +44,7 @@ const Header = () => {
         <header className={classes.header}>
             <div className={`${classes.header__content}`}>
                 <Link href="/" className={classes.header__content__logo}>
-                    <Image src='/eport.png' alt='Eport' width='144' height='45' />
+                    <Image src='/img/eport.png' alt='Eport' width='144' height='45' />
                 </Link>
                 <nav className={`${classes.header__content__nav}`}>
                     <ul>

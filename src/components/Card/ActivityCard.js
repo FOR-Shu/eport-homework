@@ -5,7 +5,7 @@ import classes from "./Card.module.scss"
 import { GrLocation, GrCreditCard, GrCalendar } from 'react-icons/Gr'
 
 const ActivityCard = () => {
-    const [newCards] = useState([
+    const [cards] = useState([
         {
             title: '108課綱專業講師：教你寫出教授超愛的學習歷程',
             type: '講座',
@@ -46,13 +46,13 @@ const ActivityCard = () => {
 
     return (
         <div className={`${classes.activityCards}`}>
-            {newCards.map((card, i) => (
+            {cards.map((card, i) => (
                 <div key={i} className={classes.activityCards__card}>
                     <div className={classes.activityCards__card__highlightTags}>
                         <div className={classes.activityCards__card__highlightTags__deadline}>{card.deadline}</div>
                         <div className={classes.activityCards__card__highlightTags__type}>{card.type}</div>
                     </div>
-                    <Image src='/cardImg.jpg' alt='img' width='45' height='45' layout="responsive" />
+                    <Image src='/img/cardImg.jpg' alt='img' width='45' height='45' layout="responsive" />
                     <h3>{card.title}</h3>
                     <div className={classes.activityCards__card__content}>
                         <div className={classes.activityCards__card__content__list}>
