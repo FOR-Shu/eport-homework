@@ -1,0 +1,44 @@
+@import "@/styles/variables.scss";
+
+.dropDown {
+  color: $dark;
+  font-size: 14px;
+  font-weight: 300;
+  // min-width: 5em;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  transition: all .3s;
+
+  &:hover &__menu {
+    display: block;
+    z-index: 9999;
+  }
+
+  &__select {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  &__menu {
+    // margin-top: 0.2rem;
+    background-color: $light;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    z-index: 1;
+
+    li {
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+}

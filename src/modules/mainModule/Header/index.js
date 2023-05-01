@@ -6,10 +6,13 @@ import useSticky from '@/hooks/useSticky';
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
+import Dropdown from '@/components/Dropdown';
 import Button from '@/components/Button';
 import { BUTTON_TYPES } from '@/data/button';
 
 import classes from './Header.module.scss';
+import SearchBar from '@/components/SearchBar';
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -46,6 +49,10 @@ const Header = () => {
                 <Link href="/" className={classes.header__content__logo}>
                     <Image src='/img/eport.png' alt='Eport' width='144' height='45' />
                 </Link>
+                <div className={classes.header__content__action}>
+                    <Dropdown />
+                    <SearchBar />
+                </div>
                 <nav className={`${classes.header__content__nav}`}>
                     <ul>
                         <li>

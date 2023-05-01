@@ -1,0 +1,27 @@
+@import "@/styles/variables.scss";
+
+.search {
+  color: #000;
+
+  &__bar {
+    // width: 100%;
+    // max-width: 700px;
+    display: flex;
+    align-items: center;
+
+    input {
+      font-size: 13px;
+      line-height: 20px;
+      border: none;
+      outline: none;
+      border: 1px solid $gray;
+      margin-right: 10px;
+      padding: 9px 12px;
+      border-radius: 3px;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  }
+}

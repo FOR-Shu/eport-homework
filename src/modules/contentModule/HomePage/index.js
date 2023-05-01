@@ -7,7 +7,7 @@ import Type from '../Type';
 const HomePage = () => {
     return (
         <div>
-            <Banner/>
+            <Banner />
             <Activity title='熱門推薦' bgColor='#FFFFFF' />
             <Type title='多元活動盡情探索' bgColor='#F1FAFF' />
             <Activity title='營隊專區' bgColor='#FFFFFF' />
