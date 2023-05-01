@@ -19,6 +19,11 @@
                 vertical-align: middle;
                 border-style: none;
             }
+
+            @media screen and (max-width: 768px) {
+                //TODO 圖片壓上去
+                display: none;
+            }
         }
 
         &__group {
@@ -30,6 +35,10 @@
             h2 {
                 text-align: left;
                 font-size: 28px;
+
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
             }
 
             &__title {
@@ -37,6 +46,7 @@
                 margin-bottom: 25px;
 
                 @media screen and (max-width: 768px) {
+                    margin-top: 30px;
                     padding-bottom: 5px;
                 }
             }
@@ -44,7 +54,7 @@
             &__btnGroup {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 2rem 20px;
+                gap: 1.5rem 20px;
 
                 a {
                     img {
@@ -82,17 +92,48 @@
                             margin-left: 1rem;
                             transition: all .3s ease-out;
                         }
+
+                        @media screen and (max-width: 1200px) {
+                            img {
+                                width: 25%;
+                            }
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            img {
+                                width: 25%;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        padding: 20px 15px;
                     }
                 }
+
+                @media screen and (max-width: 1200px) {
+                    gap: 1rem 1rem;
+                }
+
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 0.5rem 1rem;
+                }
             }
+
+            @media screen and (max-width: 768px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
         }
     }
 
     @media screen and (max-width: 1200px) {
-        padding: 0rem 6rem;
+        padding: 0rem 4rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 0rem 3rem;
+        padding: 0rem 1.5rem;
     }
 }
