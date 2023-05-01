@@ -38,7 +38,6 @@ const Type = (props) => {
     return (
         <div className={classes.type} style={{ backgroundColor: bgColor }}>
             <div className={classes.type__content}>
-
                 {/* 圖片 */}
                 <div className={classes.type__content__img}>
                     <Image src='/img/explore.png' alt='explore' width='540' height='40' />

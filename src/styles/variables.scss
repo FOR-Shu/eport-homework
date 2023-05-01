@@ -28,6 +28,10 @@ $headerHeight: 80px;
 // box shadow
 $boxShadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
+$pc: max-width 1200px;
+$pad: max-width 960px;
+$phone: max-width 768px;
+
 @mixin breakpoint($point) {
     @if $point==md {
 
