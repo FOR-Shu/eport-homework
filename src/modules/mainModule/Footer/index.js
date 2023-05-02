@@ -66,9 +66,11 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className={classes.footer__content__menu__info}>
+                        <div className={classes.footer__content__menu__info__social}>
                             <Button type={BUTTON_TYPES.ICON} icon='facebook' />
                             <Button type={BUTTON_TYPES.ICON} icon='instagram' />
                             <Button type={BUTTON_TYPES.ICON} icon='youtube' />
+                        </div>
                         <ul>
                             <li style={{ marginTop: '16px' }}>
                                 <Link href="/" legacyBehavior>
@@ -84,6 +86,12 @@ const Footer = () => {
                                 <p>© 2023 E-port. All Rights Reserved.</p>
                             </li>
                         </ul>
+                        <div className={classes.footer__content__menu__info__mobile}>
+                            <a href='#'>聯絡我們</a>
+                            <a href='#'>常見問題</a>
+                            <a href='#'>隱私權政策</a>
+                            <a href='#' style={{border: '0', paddingRight: '0', marginRight: '0'}}>個資保護聲明</a>
+                        </div>
                     </div>
                 </div>
             </div>

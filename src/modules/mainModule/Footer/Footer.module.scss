@@ -13,16 +13,16 @@
     }
 
     &__content {
+        // max-width: 1920px;
         padding: 20px 0px;
-        overflow: hidden;
-        margin: 0 auto;
+        width: 100%;
         height: 100%;
+        overflow: hidden;
         display: flex;
         position: relative;
         z-index: 100;
-        // max-width: 1920px;
-        // align-items: center;
-        // justify-content: space-between;
+        align-items: center;
+        justify-content: center;
 
         &__menu {
             overflow: hidden;
@@ -32,11 +32,17 @@
             margin: 20px 0;
 
             &__logo {
-                margin: 0px 15px;
-                width: 255px;
-                font-size: 3rem;
-                font-weight: bold;
-                text-decoration: none;
+                margin-right: 10rem;
+
+                @media screen and (max-width: 1200px) {
+                    margin-right: 2rem;
+                }
+
+                @media screen and (max-width: 764px) {
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                }
             }
 
             &__link {
@@ -59,6 +65,10 @@
                         }
                     }
                 }
+
+                @media screen and (max-width: 764px) {
+                    display: none;
+                }
             }
 
             &__info {
@@ -67,6 +77,11 @@
                 ul {
                     li {
                         line-height: 22px;
+
+                        @media screen and (max-width: 764px) {
+                            display: flex;
+                            justify-content: center;
+                        }
                     }
 
                     a {
@@ -78,7 +93,51 @@
                         }
                     }
                 }
+
+                &__social {
+                    @media screen and (max-width: 764px) {
+                        padding-top: 2rem;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                &__mobile {
+                    display: flex;
+                    margin-top: 1.5rem;
+
+                    a {
+                        border-right: 1px solid #d2d2d7;
+                        margin-right: 7px;
+                        padding-right: 10px;
+                    }
+
+                    @media screen and (min-width: 764px) {
+                        display: none;
+                    }
+
+                }
+
+                @media screen and (max-width: 1200px) {
+                    padding-left: 0px;
+                }
+
+                @media screen and (max-width: 764px) {
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                display: block;
             }
         }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 0 3rem;
+    }
+
+    @media screen and (max-width: 764px) {
+        padding: 0;
     }
 }
