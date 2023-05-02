@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import useSticky from '@/hooks/useSticky';
 
 import Button from '@/components/Button';
 import { BUTTON_TYPES } from '@/data/button';

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import useSticky from '@/hooks/useSticky';
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,37 +14,20 @@ import SearchBar from '@/components/SearchBar';
 
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const { sticky, stickyRef } = useSticky();
-    const [size, setSize] = useState({
-        width: undefined,
-        height: undefined,
-    });
+    const [sticky, setSticky] = useState(false);
 
     useEffect(() => {
-        const handleResize = () => {
-            setSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        };
-        window.addEventListener("resize", handleResize);
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    useEffect(() => {
-        if (size.width > 768 && menuOpen) {
-            setMenuOpen(false);
+        const handleScroll = () => {
+            setSticky(window.pageYOffset > 200);
+            console.log(window.pageYOffset);
         }
-    }, [size.width, menuOpen]);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
 
-    const menuToggleHandler = () => {
-        setMenuOpen((p) => !p);
-    };
     return (
-        <header className={classes.header}>
-            <div className={`${classes.header__content}`}>
+        <header className={sticky ? `${classes.header} ${classes.sticky}`: `${classes.header}`}>
+            <div className={classes.header__content}>
                 <Link href="/" className={classes.header__content__logo}>
                     <Image src='/img/eport.png' alt='Eport' width='144' height='45' />
                 </Link>
@@ -74,11 +56,7 @@ const Header = () => {
                     <Button type={BUTTON_TYPES.PRIMARY} text='登入' />
                 </nav>
                 <div className={classes.header__content__toggle}>
-                    {!menuOpen ? (
-                        <BiMenuAltRight onClick={menuToggleHandler} />
-                    ) : (
-                        <AiOutlineClose onClick={menuToggleHandler} />
-                    )}
+                        <BiMenuAltRight />
                 </div>
             </div>
         </header>
