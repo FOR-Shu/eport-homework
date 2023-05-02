@@ -20,7 +20,7 @@
                 border-style: none;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 //TODO 圖片壓上去
                 display: none;
             }
@@ -36,7 +36,7 @@
                 text-align: left;
                 font-size: 28px;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: $phone) {
                     text-align: center;
                 }
             }
@@ -45,7 +45,7 @@
                 margin-top: 50px;
                 margin-bottom: 25px;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: $phone) {
                     margin-top: 30px;
                     padding-bottom: 5px;
                 }
@@ -93,35 +93,35 @@
                             transition: all .3s ease-out;
                         }
 
-                        @media screen and (max-width: 1200px) {
+                        @media screen and (max-width: $pc) {
                             img {
                                 width: 25%;
                             }
                         }
 
-                        @media screen and (max-width: 768px) {
+                        @media screen and (max-width: $phone) {
                             img {
                                 width: 25%;
                             }
                         }
                     }
 
-                    @media screen and (max-width: 1200px) {
+                    @media screen and (max-width: $pc) {
                         padding: 20px 15px;
                     }
                 }
 
-                @media screen and (max-width: 1200px) {
+                @media screen and (max-width: $pc) {
                     gap: 1rem 1rem;
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: $phone) {
                     grid-template-columns: repeat(2, 1fr);
                     gap: 0.5rem 1rem;
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -129,11 +129,11 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $pc) {
         padding: 0rem 4rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $phone) {
         padding: 0rem 1.5rem;
     }
 }

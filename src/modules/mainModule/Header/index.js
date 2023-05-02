@@ -21,6 +21,7 @@ const Header = () => {
         height: undefined,
     });
 
+    // RWD Mobile
     useEffect(() => {
         const handleResize = () => {
             setSize({
@@ -43,6 +44,7 @@ const Header = () => {
         setMenuOpen((p) => !p);
     };
 
+    // Sticky Header
     useEffect(() => {
         const handleScroll = () => {
             setSticky(window.pageYOffset > 180);

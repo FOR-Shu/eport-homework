@@ -26,7 +26,7 @@
         font-weight: 500;
         color: $primary;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $phone) {
             font-size: 26px;
         }
     }

@@ -34,11 +34,11 @@
             &__logo {
                 margin-right: 10rem;
 
-                @media screen and (max-width: 1200px) {
+                @media screen and (max-width: $pc) {
                     margin-right: 2rem;
                 }
 
-                @media screen and (max-width: 764px) {
+                @media screen and (max-width: $phone) {
                     margin: 0;
                     display: flex;
                     justify-content: center;
@@ -66,7 +66,7 @@
                     }
                 }
 
-                @media screen and (max-width: 764px) {
+                @media screen and (max-width: $phone) {
                     display: none;
                 }
             }
@@ -78,7 +78,7 @@
                     li {
                         line-height: 22px;
 
-                        @media screen and (max-width: 764px) {
+                        @media screen and (max-width: $phone) {
                             display: flex;
                             justify-content: center;
                         }
@@ -95,7 +95,7 @@
                 }
 
                 &__social {
-                    @media screen and (max-width: 764px) {
+                    @media screen and (max-width: $phone) {
                         padding-top: 2rem;
                         display: flex;
                         justify-content: center;
@@ -112,32 +112,32 @@
                         padding-right: 10px;
                     }
 
-                    @media screen and (min-width: 764px) {
+                    @media screen and (min-width: $phone) {
                         display: none;
                     }
 
                 }
 
-                @media screen and (max-width: 1200px) {
+                @media screen and (max-width: $pc) {
                     padding-left: 0px;
                 }
 
-                @media screen and (max-width: 764px) {
+                @media screen and (max-width: $phone) {
                     padding: 0;
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 display: block;
             }
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $pc) {
         padding: 0 3rem;
     }
 
-    @media screen and (max-width: 764px) {
+    @media screen and (max-width: $phone) {
         padding: 0;
     }
 }

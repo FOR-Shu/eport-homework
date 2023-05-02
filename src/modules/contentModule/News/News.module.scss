@@ -68,17 +68,17 @@
                         }
                     }
 
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: $phone) {
                         padding: 20px 15px;
                     }
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: $phone) {
                     gap: 10px 10px;
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 padding: 2rem 1rem;
                 margin: 0;
             }
@@ -155,7 +155,7 @@
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 flex: 0 0 100%;
                 max-width: 100%;
                 border-radius: 0;
@@ -163,16 +163,16 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $phone) {
             display: block;
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $pc) {
         padding: 2rem 3rem;
     }
 
-    @media screen and (max-width: 764px) {
+    @media screen and (max-width: $phone) {
         padding: 0;
     }
 }

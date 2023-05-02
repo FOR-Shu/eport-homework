@@ -140,11 +140,11 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $pc) {
         padding: 0 4rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $phone) {
         padding: 0 1.5rem;
     }
 }

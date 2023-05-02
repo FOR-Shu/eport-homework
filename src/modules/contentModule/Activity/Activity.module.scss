@@ -13,7 +13,7 @@
         &__title {
             padding-bottom: 25px;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $phone) {
                 padding-bottom: 5px;
             }
         }
